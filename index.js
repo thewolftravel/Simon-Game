@@ -42,7 +42,9 @@ function checkAnswer(currentLevel) {
     }
   } else {
     console.log("wrong");
+    // Uses existing function to play (selected sound)
     playSound("wrong");
+    // Updates the h1
     $("#level-title").text(
       "Game Over, tenta de novo. Press any key to restart"
     );
