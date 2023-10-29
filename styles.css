@@ -7,6 +7,8 @@ footer {
   font-family: "Press Start 2P", cursive;
   color: #fef2bf;
   font-size: 0.8rem;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 a {
@@ -18,9 +20,17 @@ a:hover {
   text-decoration: underline;
 }
 
+p {
+  color: #fef2bf;
+  font-size: 1rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  text-align: justify;
+}
+
 #level-title {
   font-family: "Press Start 2P", cursive;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-top: 25px;
   margin-bottom: 15px;
   color: #fef2bf;
@@ -28,7 +38,7 @@ a:hover {
 
 .container {
   display: block;
-  width: 50%;
+  width: 70%;
   margin: auto;
 }
 
