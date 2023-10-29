@@ -1,12 +1,21 @@
 body {
   text-align: center;
-  background-color: #011f3f;
+  background-color: #72567d;
 }
 
 footer {
   font-family: "Press Start 2P", cursive;
   color: #fef2bf;
   font-size: 0.8rem;
+}
+
+a {
+  color: #fef2bf;
+  text-decoration: none;
+}
+a:hover {
+  color: #40ffff;
+  text-decoration: underline;
 }
 
 #level-title {
@@ -28,29 +37,29 @@ footer {
   display: inline-block;
   height: 200px;
   width: 200px;
-  border: 10px solid black;
+  border: 10px solid #332738;
   border-radius: 20%;
 }
 
 .game-over {
-  background-color: red;
+  background-color: #e15d52;
   opacity: 0.8;
 }
 
 .red {
-  background-color: red;
+  background-color: #db7644;
 }
 
 .green {
-  background-color: green;
+  background-color: #568683;
 }
 
 .blue {
-  background-color: blue;
+  background-color: #44dbd1;
 }
 
 .yellow {
-  background-color: yellow;
+  background-color: #d3db44;
 }
 
 .pressed {

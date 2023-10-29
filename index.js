@@ -54,6 +54,7 @@ function checkAnswer(currentLevel) {
     setTimeout(function () {
       $("body").removeClass("game-over");
     }, 200);
+    startOver();
   }
 }
 
@@ -94,4 +95,11 @@ function animatePress(currentColour) {
   setTimeout(function () {
     $("#" + currentColour).removeClass("pressed");
   }, 100);
+}
+// Restarts the game
+function startOver() {
+  // Resets the game
+  level = 0;
+  gamePattern = [];
+  started = false;
 }
