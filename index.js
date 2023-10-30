@@ -15,6 +15,13 @@ $("h1").click(function () {
     $("#level-title").text("Level " + level);
     nextSequence();
     started = true;
+    // Hide Instructions
+    $(".pt-instructions").animate({
+      height: "toggle",
+    });
+    $(".en-instructions").animate({
+      height: "toggle",
+    });
   }
 });
 // Handler function on button click
@@ -103,3 +110,12 @@ function startOver() {
   gamePattern = [];
   started = false;
 }
+// Bring back instructions when clicked
+$("p").click(function () {
+  $(".pt-instructions").animate({
+    height: "toggle",
+  });
+  $(".en-instructions").animate({
+    height: "toggle",
+  });
+});
