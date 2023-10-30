@@ -12,7 +12,7 @@ var level = 0;
 $("h1").click(function () {
   if (!started) {
     // Changes h1
-    $("#level-title").text("Level " + level);
+    $("#level-title").text("Level " + level).animate({margin: "20%",});
     nextSequence();
     started = true;
     // Hide Instructions
