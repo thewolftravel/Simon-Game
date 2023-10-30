@@ -8,8 +8,8 @@ var userClickedPattern = [];
 var started = false;
 // Stores the Level
 var level = 0;
-// Adds keyboad detection to Start the game
-$(document).keydown(function () {
+// Adds click detection to Start the game
+$("h1").click(function () {
   if (!started) {
     // Changes h1
     $("#level-title").text("Level " + level);
