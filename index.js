@@ -46,7 +46,7 @@ function checkAnswer(currentLevel) {
     playSound("wrong");
     // Updates the h1
     $("#level-title").text(
-      "Game Over, Press any key to restart. <br /> Game Over, aperte qualquer tecla pra iniciar."
+      "Game Over, Press any key to restart. | Game Over, aperte qualquer tecla pra iniciar."
     );
     // Adds class to concatenation of id and userChosenColour or randomChosenColour
     $("body").addClass("game-over");
