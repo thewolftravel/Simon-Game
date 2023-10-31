@@ -47,7 +47,9 @@ function checkAnswer(currentLevel) {
     // Updates the h1
     $("#level-title").text("Level " + level + " ❌ Game Over");
     // Adds restart instructions
-    $("#start").append("<h2 class='start'>Restart here<br/>Recomece aqui</h2>");
+    $("#start")
+      .append("<h2 class='start'>Restart here<br/>Recomece aqui</h2>")
+      .animate({ letterSpacing: "5px" });
     // Adds class to concatenation of id and userChosenColour or randomChosenColour
     $("body").addClass("game-over");
     // Delays the removal of the class
