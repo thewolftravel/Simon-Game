@@ -9,16 +9,16 @@ var started = false;
 // Stores the Level
 var level = 0;
 // Adds click detection to Start the game
-$("#level-title").click(function () {
+$("#start").click(function () {
   if (!started) {
     // Changes h1
     $("#level-title")
       .text("Level " + level)
-      .animate({ letterSpacing: "+=10px" });
+      .animate({ letterSpacing: "10px" });
     nextSequence();
     started = true;
     // Brings game down
-    $("#row1").animate({ marginTop: "10%" });
+    $("#row1").animate({ marginTop: "5%" });
   }
 });
 // Handler function on button click
@@ -38,30 +38,29 @@ $(".btn").click(function () {
 // Checks the userClickedPattern against the gamePattern
 function checkAnswer(currentLevel) {
   if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
-    console.log("success");
     if (userClickedPattern.length === gamePattern.length) {
       setTimeout(function () {
         nextSequence();
       }, 1000);
     }
   } else {
-    console.log("wrong");
-    // Uses existing function to play (selected sound)
-    playSound("wrong");
     // Updates the h1
-    $("#level-title")
-      .text("Game Over. Press here to restart. Aperte aqui pra recomeçar.")
-      .animate({ letterSpacing: "-=2px" });
+    $("#level-title").text("Level " + level + " ❌ Game Over");
+    // Adds restart instructions
+    $("#start").append("<h2 class='start'>Restart here<br/>Recomece aqui</h2>");
     // Adds class to concatenation of id and userChosenColour or randomChosenColour
     $("body").addClass("game-over");
     // Delays the removal of the class
     setTimeout(function () {
       $("body").removeClass("game-over");
-    }, 500);
+    }, 1000);
     startOver();
   }
 }
-
+// Remove restart instructions
+$("#start").on("click", function () {
+  $("h2").remove();
+});
 // Function Creates a new sequence of buttons to be pressed
 function nextSequence() {
   // Resets userClickedPattern

@@ -18,6 +18,11 @@ a {
 a:hover {
   color: #40ffff;
   text-decoration: underline;
+  cursor: pointer;
+}
+
+.btn:hover {
+  cursor: pointer;
 }
 
 p {
@@ -28,11 +33,29 @@ p {
   text-align: justify;
 }
 
+p:hover {
+  cursor: pointer;
+  text-shadow: 0 10px 20px #332738;
+}
+
 #level-title {
   font-family: "Press Start 2P", cursive;
   font-size: 1rem;
   color: #fef2bf;
   margin: none;
+  line-height: 25px;
+}
+
+.start {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1rem;
+  color: #fef2bf;
+  margin: none;
+  line-height: 25px;
+}
+
+#start:hover {
+  cursor: pointer;
 }
 
 .container {
