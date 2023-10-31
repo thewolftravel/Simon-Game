@@ -3,6 +3,9 @@ Simon Game
 The Simon Game is a classic electronic memory game brought to the web. 
 This project challenges players to test and enhance their memory skills by following a sequence of lights and sounds, gradually increasing in complexity.
 
+🌐 Explore the Game: https://lnkd.in/grTJNDzT
+🔗 Check out the Code: https://lnkd.in/gNHGKduM
+
 Tech Stack
 This project is built using a range of web technologies:
 
@@ -33,3 +36,6 @@ Contribution
 Contributions to the Simon Game project are encouraged! Whether you want to add new features, improve the game's user interface, 
 or optimize the game logic, feel free to submit a pull request. 
 Have fun playing and enhancing the classic Simon Game for a new generation of players! 🎮🧠🎉
+
+🌐 Explore the Game: https://lnkd.in/grTJNDzT
+🔗 Check out the Code: https://lnkd.in/gNHGKduM
