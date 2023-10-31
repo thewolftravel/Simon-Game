@@ -9,19 +9,16 @@ var started = false;
 // Stores the Level
 var level = 0;
 // Adds click detection to Start the game
-$("h1").click(function () {
+$("#level-title").click(function () {
   if (!started) {
     // Changes h1
-    $("#level-title").text("Level " + level);
+    $("#level-title")
+      .text("Level " + level)
+      .animate({ letterSpacing: "+=10px" });
     nextSequence();
     started = true;
-    // Hide Instructions
-    $(".pt-instructions").animate({
-      height: "toggle",
-    });
-    $(".en-instructions").animate({
-      height: "toggle",
-    });
+    // Brings game down
+    $("#row1").animate({ marginTop: "10%" });
   }
 });
 // Handler function on button click
@@ -52,15 +49,15 @@ function checkAnswer(currentLevel) {
     // Uses existing function to play (selected sound)
     playSound("wrong");
     // Updates the h1
-    $("#level-title").text(
-      "Game Over, press here to restart. | Game Over, aperte aqui pra iniciar."
-    );
+    $("#level-title")
+      .text("Game Over. Press here to restart. Aperte aqui pra recomeçar.")
+      .animate({ letterSpacing: "-=2px" });
     // Adds class to concatenation of id and userChosenColour or randomChosenColour
     $("body").addClass("game-over");
     // Delays the removal of the class
     setTimeout(function () {
       $("body").removeClass("game-over");
-    }, 200);
+    }, 500);
     startOver();
   }
 }
