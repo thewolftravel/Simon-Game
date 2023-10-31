@@ -8,7 +8,7 @@ This project is built using a range of web technologies:
 
 HTML: Providing the structure for the game interface.
 
-CSS: Styling and enhancing the visual design.
+CSS: Styling, enhancing the visual design, and creating a responsive application.
 
 JavaScript: Driving the game logic and interaction.
 
