@@ -8,8 +8,8 @@ var userClickedPattern = [];
 var started = false;
 // Stores the Level
 var level = 0;
-// Adds click detection to Start the game
-$("#start").click(function () {
+// Starts game
+var start = function () {
   if (!started) {
     // Changes h1
     $("#level-title")
@@ -20,6 +20,14 @@ $("#start").click(function () {
     // Brings game down
     $("#row1").animate({ marginTop: "5%" });
   }
+};
+// Adds click detection to Start the game
+$("#start").click(start);
+// Key press function
+$(document).keypress(start);
+
+$(document).keypress(function () {
+  $("h2").remove();
 });
 // Handler function on button click
 $(".btn").click(function () {
@@ -108,6 +116,9 @@ function startOver() {
   gamePattern = [];
   started = false;
 }
+// Starts game by keyboard
+$("");
+
 // Bring back instructions when clicked
 $("p").click(function () {
   $(".pt-instructions").animate({
