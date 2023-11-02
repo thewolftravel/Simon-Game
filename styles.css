@@ -4,9 +4,10 @@ body {
 }
 
 footer {
-  font-family: "Press Start 2P", cursive;
+  font-family: monospace;
   color: #fef2bf;
   font-size: 0.8rem;
+  font-weight: 500;
   margin-top: 20px;
   margin-bottom: 30px;
 }
